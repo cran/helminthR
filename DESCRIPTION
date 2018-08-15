@@ -2,7 +2,7 @@ Package: helminthR
 Type: Package
 Title: Access London Natural History Museum Host-Helminth Record
         Database
-Version: 1.0.5
+Version: 1.0.6
 Author: Tad Dallas
 Imports: xml2, rvest, httr, magrittr, plyr, ggmap, utils, knitr,
         rmarkdown
@@ -21,6 +21,6 @@ License: GPL-3
 LazyData: yes
 RoxygenNote: 6.0.1
 NeedsCompilation: no
-Packaged: 2018-07-26 06:50:11 UTC; tad
+Packaged: 2018-08-15 08:42:40 UTC; tad
 Repository: CRAN
-Date/Publication: 2018-07-30 12:10:09 UTC
+Date/Publication: 2018-08-15 09:00:03 UTC
