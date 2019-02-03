@@ -33,12 +33,11 @@ combinations be removed? (default is FALSE)}
 \value{
 Three (or five) column data.frame containing host species, 
 	parasite species (shortened name and full name), and citation link and 
-	number of citations (if `citation`=TRUE), with each row corresponding 
+	number of citations (if \code{citation = TRUE}), with each row corresponding 
 	to an occurrence of a parasite species on a host species.
 }
 \description{
-Given a location (available from \code{\link{listLocations}} this function 
-	returns all host-parasite associations in that location.
+Find host-parasite interactions for a given location
 }
 \details{
 \code{hostState} can take values 1-6 corresponding to if the recorded 

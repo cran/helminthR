@@ -2,11 +2,10 @@ Package: helminthR
 Type: Package
 Title: Access London Natural History Museum Host-Helminth Record
         Database
-Version: 1.0.6
+Version: 1.0.7
 Author: Tad Dallas
-Imports: xml2, rvest, httr, magrittr, plyr, ggmap, utils, knitr,
-        rmarkdown
-Suggests: testthat, ggplot2,
+Imports: xml2, rvest, httr, magrittr, plyr, utils, knitr, rmarkdown
+Suggests: testthat
 VignetteBuilder: knitr
 Maintainer: Tad Dallas <tad.a.dallas@gmail.com>
 URL: https://github.com/rOpenSci/helminthR
@@ -19,8 +18,8 @@ Description: Access to large host-parasite data is often hampered by the
   to query by host species, parasite species, and geographic location.
 License: GPL-3
 LazyData: yes
-RoxygenNote: 6.0.1
+RoxygenNote: 6.1.1
 NeedsCompilation: no
-Packaged: 2018-08-15 08:42:40 UTC; tad
+Packaged: 2019-02-03 16:02:48 UTC; tad
 Repository: CRAN
-Date/Publication: 2018-08-15 09:00:03 UTC
+Date/Publication: 2019-02-03 16:33:14 UTC

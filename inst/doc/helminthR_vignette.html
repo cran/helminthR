@@ -225,7 +225,7 @@ install.packages(&quot;helminthR&quot;)
 
 <h2>Package functionality</h2>
 
-<p>The package allows for the acquisition of host-helminth interaction records based on host name (genus or species), parasite name (genus, species, or group), and/or location (accepted region name as provided by the <code>listLocations()</code> function. Parasite groups include &ldquo;Acanthocephalans&rdquo;, &ldquo;Cestodes&rdquo;, &ldquo;Monogeans&rdquo;, &ldquo;Nematodes&rdquo;, &ldquo;Trematodes&rdquo;, or &ldquo;Turbs&rdquo; (short for Turbellarians). The user can further define host species as occuring </p>
+<p>The package allows for the acquisition of host-helminth interaction records based on host name (genus or species), parasite name (genus, species, or group), and/or location (accepted region name as provided in <code>data(locations)</code>. Parasite groups include &ldquo;Acanthocephalans&rdquo;, &ldquo;Cestodes&rdquo;, &ldquo;Monogeans&rdquo;, &ldquo;Nematodes&rdquo;, &ldquo;Trematodes&rdquo;, or &ldquo;Turbs&rdquo; (short for Turbellarians). The user can further define host species as occuring </p>
 
 <ol>
 <li>&ldquo;In the wild&rdquo;</li>
@@ -251,7 +251,7 @@ gorillaParasites &lt;- findHost(genus=&#39;Gorilla&#39;, species=&#39;gorilla&#3
     hostState=1, speciesOnly=TRUE, citation=TRUE)
 
 dim(gorillaParasites)
-#&gt; [1] 25  5
+#&gt; [1] 23  5
 </code></pre>
 
 <pre><code class="r">
@@ -270,13 +270,13 @@ head(gorillaParasites)
 #&gt; 4 Anoplocephala gorillae Nybelin, 1928
 #&gt; 5 Anoplocephala gorillae Nybelin, 1928
 #&gt; 6 Anoplocephala gorillae Nybelin, 1928
-#&gt;                                                                                                                                                                                                                                                                                                                                                                          Reference
-#&gt; 1                                    http://www.nhm.ac.uk/research-curation/scientific-resources/taxonomy-systematics/host-parasites/database/references.jsp;jsessionid=F154E550A9C9E9D907F90DE2C5B803E0.web-livecluster1?paragenus=(Strongyle)&amp;paraspecies=&amp;paragroup=&amp;subgroup=&amp;hostgenus=Gorilla&amp;hostspecies=gorilla&amp;pstatus=&amp;hstate=1&amp;location=&amp;locationID=&amp;linkedthrough=true
-#&gt; 2                           http://www.nhm.ac.uk/research-curation/scientific-resources/taxonomy-systematics/host-parasites/database/references.jsp;jsessionid=F154E550A9C9E9D907F90DE2C5B803E0.web-livecluster1?paragenus=(Strongyle)&amp;paraspecies=&amp;paragroup=&amp;subgroup=&amp;hostgenus=Gorilla&amp;hostspecies=gorilla+beringei&amp;pstatus=&amp;hstate=1&amp;location=&amp;locationID=&amp;linkedthrough=true
-#&gt; 3                           http://www.nhm.ac.uk/research-curation/scientific-resources/taxonomy-systematics/host-parasites/database/references.jsp;jsessionid=F154E550A9C9E9D907F90DE2C5B803E0.web-livecluster1?paragenus=(Trichostrongylidae)&amp;paraspecies=&amp;paragroup=&amp;subgroup=&amp;hostgenus=Gorilla&amp;hostspecies=gorilla&amp;pstatus=&amp;hstate=1&amp;location=&amp;locationID=&amp;linkedthrough=true
-#&gt; 4          http://www.nhm.ac.uk/research-curation/scientific-resources/taxonomy-systematics/host-parasites/database/references.jsp;jsessionid=F154E550A9C9E9D907F90DE2C5B803E0.web-livecluster1?paragenus=Anoplocephala&amp;paraspecies=gorillae+Nybelin%2c+1928&amp;paragroup=&amp;subgroup=&amp;hostgenus=Gorilla&amp;hostspecies=gorilla&amp;pstatus=&amp;hstate=1&amp;location=&amp;locationID=&amp;linkedthrough=true
-#&gt; 5 http://www.nhm.ac.uk/research-curation/scientific-resources/taxonomy-systematics/host-parasites/database/references.jsp;jsessionid=F154E550A9C9E9D907F90DE2C5B803E0.web-livecluster1?paragenus=Anoplocephala&amp;paraspecies=gorillae+Nybelin%2c+1928&amp;paragroup=&amp;subgroup=&amp;hostgenus=Gorilla&amp;hostspecies=gorilla+beringei&amp;pstatus=&amp;hstate=1&amp;location=&amp;locationID=&amp;linkedthrough=true
-#&gt; 6  http://www.nhm.ac.uk/research-curation/scientific-resources/taxonomy-systematics/host-parasites/database/references.jsp;jsessionid=F154E550A9C9E9D907F90DE2C5B803E0.web-livecluster1?paragenus=Anoplocephala&amp;paraspecies=gorillae+Nybelin%2c+1928&amp;paragroup=&amp;subgroup=&amp;hostgenus=Gorilla&amp;hostspecies=gorilla+graueri&amp;pstatus=&amp;hstate=1&amp;location=&amp;locationID=&amp;linkedthrough=true
+#&gt;                                                                                                                                                                                                                                                                                                                                                         Reference
+#&gt; 1                                    http://www.nhm.ac.uk/research-curation/scientific-resources/taxonomy-systematics/host-parasites/database/references.jsp;jsessionid=877ACBD6FF3E6DC42C5E0B510574D437?paragenus=(Strongyle)&amp;paraspecies=&amp;paragroup=&amp;subgroup=&amp;hostgenus=Gorilla&amp;hostspecies=gorilla&amp;pstatus=&amp;hstate=1&amp;location=&amp;locationID=&amp;linkedthrough=true
+#&gt; 2                           http://www.nhm.ac.uk/research-curation/scientific-resources/taxonomy-systematics/host-parasites/database/references.jsp;jsessionid=877ACBD6FF3E6DC42C5E0B510574D437?paragenus=(Strongyle)&amp;paraspecies=&amp;paragroup=&amp;subgroup=&amp;hostgenus=Gorilla&amp;hostspecies=gorilla+beringei&amp;pstatus=&amp;hstate=1&amp;location=&amp;locationID=&amp;linkedthrough=true
+#&gt; 3                           http://www.nhm.ac.uk/research-curation/scientific-resources/taxonomy-systematics/host-parasites/database/references.jsp;jsessionid=877ACBD6FF3E6DC42C5E0B510574D437?paragenus=(Trichostrongylidae)&amp;paraspecies=&amp;paragroup=&amp;subgroup=&amp;hostgenus=Gorilla&amp;hostspecies=gorilla&amp;pstatus=&amp;hstate=1&amp;location=&amp;locationID=&amp;linkedthrough=true
+#&gt; 4          http://www.nhm.ac.uk/research-curation/scientific-resources/taxonomy-systematics/host-parasites/database/references.jsp;jsessionid=877ACBD6FF3E6DC42C5E0B510574D437?paragenus=Anoplocephala&amp;paraspecies=gorillae+Nybelin%2c+1928&amp;paragroup=&amp;subgroup=&amp;hostgenus=Gorilla&amp;hostspecies=gorilla&amp;pstatus=&amp;hstate=1&amp;location=&amp;locationID=&amp;linkedthrough=true
+#&gt; 5 http://www.nhm.ac.uk/research-curation/scientific-resources/taxonomy-systematics/host-parasites/database/references.jsp;jsessionid=877ACBD6FF3E6DC42C5E0B510574D437?paragenus=Anoplocephala&amp;paraspecies=gorillae+Nybelin%2c+1928&amp;paragroup=&amp;subgroup=&amp;hostgenus=Gorilla&amp;hostspecies=gorilla+beringei&amp;pstatus=&amp;hstate=1&amp;location=&amp;locationID=&amp;linkedthrough=true
+#&gt; 6  http://www.nhm.ac.uk/research-curation/scientific-resources/taxonomy-systematics/host-parasites/database/references.jsp;jsessionid=877ACBD6FF3E6DC42C5E0B510574D437?paragenus=Anoplocephala&amp;paraspecies=gorillae+Nybelin%2c+1928&amp;paragroup=&amp;subgroup=&amp;hostgenus=Gorilla&amp;hostspecies=gorilla+graueri&amp;pstatus=&amp;hstate=1&amp;location=&amp;locationID=&amp;linkedthrough=true
 #&gt;   CitationNumber
 #&gt; 1              1
 #&gt; 2              1
@@ -326,9 +326,9 @@ head(strongHosts)
 #&gt; 6 Capillostrongyloides norvegica Moravec &amp; Karlsbakk, 2000
 </code></pre>
 
-<h3><code>listLocations()</code> and <code>findLocation()</code></h3>
+<h3><code>data(locations)</code> and <code>findLocation()</code></h3>
 
-<p>List all location names (<code>listLocations()</code>). These names can be given to the <code>findLocation()</code> function, which finds all host-parasite associations that have occurred in the given location. Below, I look at host-parasite associations recorded in France.</p>
+<p>A data file containing all the location names that can be queried, along with putative latitude and longitude coordinates for the centroid of each location can be found in <code>data(locations)</code>. Note that this will replace any object in the global environment named <code>locations</code>. These names can be given to the <code>findLocation()</code> function, which finds all host-parasite associations that have occurred in the given location. Below, I look at host-parasite associations recorded in France.</p>
 
 <pre><code class="r">
 montanaOcc &lt;- findLocation(location=&#39;Montana&#39;)

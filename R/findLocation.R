@@ -1,6 +1,6 @@
 #' Find host-parasite interactions for a given location
 #'
-#' Given a location (available from \code{\link{listLocations}} this function 
+#' Given a location (available from \code{data{locations}) this function 
 #'		returns all host-parasite associations in that location.
 #'
 #'
@@ -32,7 +32,7 @@
 #'
 #' @return Three (or five) column data.frame containing host species, 
 #'		parasite species (shortened name and full name), and citation link and 
-#'		number of citations (if `citation`=TRUE), with each row corresponding 
+#'		number of citations (if \code{citation = TRUE}), with each row corresponding 
 #'		to an occurrence of a parasite species on a host species.
 #'
 #' @author Tad Dallas
@@ -49,11 +49,13 @@ findLocation <- function(location = NULL, group = NULL, citation = FALSE,
 	hostState = NULL, speciesOnly = FALSE, 
 	validateHosts = FALSE, removeDuplicates=FALSE){
   if(is.null(location)){
-    stop("Please choose a location from the possible locations in the listLocations() function")
+        stop("Please choose a location from the possible 
+					locations... data(locations)")
   }
 
   if (location %in% locations[,1] == FALSE) {
-    stop("Please choose a location from the possible locations in the listLocations() function")
+        stop("Please choose a location from the possible 
+					locations... data(locations)")
     }
 
 #    location1 <- gsub("\\+", "%2B", location)
