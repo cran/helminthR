@@ -1,5 +1,5 @@
 ## ----echo=FALSE---------------------------------------------------------------
-library("knitr")
+library(knitr)
 hook_output <- knitr::knit_hooks$get("output")
 knitr::knit_hooks$set(output = function(x, options) {
    lines <- options$output.lines
@@ -30,6 +30,7 @@ knitr::opts_chunk$set(
   warning = FALSE,
   message = FALSE
 )
+library(helminthR)
 
 ## ----eval=FALSE---------------------------------------------------------------
 #  
@@ -43,20 +44,11 @@ knitr::opts_chunk$set(
 #  install.packages("helminthR")
 #  
 
-## ----eval=TRUE----------------------------------------------------------------
-
-library(helminthR)
-
-gorillaParasites <- findHost(genus='Gorilla', species='gorilla', 
-	hostState=1, speciesOnly=TRUE, citation=TRUE)
-
-dim(gorillaParasites)
-
-
-## -----------------------------------------------------------------------------
-
-head(gorillaParasites)
-
+## ----eval=FALSE---------------------------------------------------------------
+#  
+#  gorillaParasites <- findHost(genus='Gorilla', species='gorilla',
+#  	hostState=1, speciesOnly=TRUE, citation=TRUE)
+#  
 
 ## ----eval=FALSE---------------------------------------------------------------
 #  
