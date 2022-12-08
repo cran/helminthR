@@ -2,12 +2,12 @@ Package: helminthR
 Type: Package
 Title: Access London Natural History Museum Host-Helminth Record
         Database
-Version: 1.0.9
-Author: Tad Dallas
+Version: 1.0.10
+Authors@R: 
+    person("Tad Dallas", role = c("aut","cre"), email = "tad.a.dallas@gmail.com")
 Imports: xml2, rvest, httr, magrittr, plyr, utils, taxize
 Suggests: testthat, knitr, rmarkdown
 VignetteBuilder: knitr
-Maintainer: Tad Dallas <tad.a.dallas@gmail.com>
 URL: https://docs.ropensci.org/helminthR/,
         https://github.com/rOpenSci/helminthR/
 BugReports: https://github.com/rOpenSci/helminthR/issues/
@@ -21,6 +21,8 @@ License: GPL-3
 LazyData: yes
 RoxygenNote: 7.1.1
 NeedsCompilation: no
-Packaged: 2021-08-16 21:12:22 UTC; tad
+Packaged: 2022-12-08 17:11:24 UTC; tad
+Author: Tad Dallas [aut, cre]
+Maintainer: Tad Dallas <tad.a.dallas@gmail.com>
 Repository: CRAN
-Date/Publication: 2021-08-16 21:50:02 UTC
+Date/Publication: 2022-12-08 23:30:02 UTC

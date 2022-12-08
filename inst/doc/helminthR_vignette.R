@@ -56,20 +56,21 @@ library(helminthR)
 #  plyr::ldply(hosts,
 #  	function(x){
 #  		findHost(unlist(strsplit(x, ' '))[1],
-#  			unlist(strsplit(x,' '))[2])})
-#  	}
+#  			unlist(strsplit(x,' '))[2])
+#      }
+#  )
 #  
 
-## ----eval=TRUE----------------------------------------------------------------
+## ----eval=FALSE---------------------------------------------------------------
+#  
+#  strongHosts <- findParasite(genus='Strongyloides')
+#  dim(strongHosts)
+#  
 
-strongHosts <- findParasite(genus='Strongyloides')
-dim(strongHosts)
-
-
-## -----------------------------------------------------------------------------
-
-head(strongHosts)
-
+## ----eval=FALSE---------------------------------------------------------------
+#  
+#  head(strongHosts)
+#  
 
 ## ----eval=FALSE---------------------------------------------------------------
 #  
